@@ -4,7 +4,7 @@
 📧 [Pavel91104@mail.ru](mailto:Pavel91104@mail.ru)  
 📱 +375 33 393-60-91  
 💻 [GitHub: Candymanzz](https://github.com/Candymanzz)
-
+tg: @htodino
 ---
 
 ## 🎯 Цель
