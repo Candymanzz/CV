@@ -47,7 +47,7 @@ tg: @htodino
 
 ### Worker  
 **Описание:** Веб-приложение для управления задачами сотрудников  
-**Технологии:** TypeScript, Node.js, Express.js  
+**Технологии:** C#, .NET Core, Entity Framework  
 **Роль:** Разработка REST API, реализация бизнес-логики, настройка маршрутов
 
 ### juridical-api  
