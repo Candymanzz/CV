@@ -10,20 +10,20 @@ tg: @htodino
 
 ## 🎯 Цель
 
-.NET-разработчик с опытом промышленных сервисов и компьютерного зрения. Ищу команду, где можно развивать backend на C# / ASP.NET и доводить сложные интеграции до стабильной работы.
+**.NET-разработчик (C# / ASP.NET Core), 1 год коммерческого опыта.** Разрабатываю backend-сервисы на .NET: REST API, микросервисы, интеграции с оборудованием и нативными SDK. Работал с EF Core, PostgreSQL, Docker, JWT и Clean Architecture. Дополнительно имею опыт в компьютерном зрении (OpenCV, Python). Ищу команду, где смогу развивать backend на .NET.
 
 ---
 
 ## 🛠️ Навыки
 
-- **Основной стек:** C#, .NET / .NET Core, ASP.NET Core, Kestrel, Swagger, YAML-конфигурация, юнит-тесты
-- **Интеграции и железо:** Hikrobot MVS SDK (`MvCameraControl.Net`), P/Invoke нативных DLL, GenICam, COM / Ethernet, DI/DO, UDP
-- **Компьютерное зрение:** OpenCV, NumPy, FastAPI — пайплайн инспекции (выравнивание, diff, аномалии, FP-фильтры)
-- **Архитектура:** микросервисы, HTTP/REST, клиент-сервер, Clean Architecture, DI, CQRS, Repository, Unit of Work
-- **Базы данных:** SQL Server, PostgreSQL, MySQL, MongoDB; Entity Framework Core
+- **Backend / .NET:** C#, .NET / .NET Core (до .NET 10), ASP.NET Core, Web API, REST, Kestrel, Swagger / OpenAPI, Dependency Injection, Problem Details, юнит- и интеграционные тесты
+- **Данные:** Entity Framework Core (Code First), PostgreSQL, SQL Server, MySQL, MongoDB; LINQ, AutoMapper, FluentValidation
+- **Архитектура:** Clean Architecture, CQRS, Repository, Unit of Work, микросервисы, HTTP/REST, ООП, SOLID, паттерны проектирования
+- **Безопасность и сервисы:** JWT Bearer, аутентификация и авторизация, email-уведомления (MailKit)
+- **DevOps / инструменты:** Docker, docker-compose, Git, GitHub (ветвление, merge, code review в команде из 4 человек)
+- **Интеграции:** Hikrobot MVS SDK (`MvCameraControl.Net`), P/Invoke нативных DLL, GenICam, COM / Ethernet, UDP, YAML-конфигурация
+- **Компьютерное зрение (дополнительно):** Python, OpenCV, NumPy, FastAPI — пайплайн инспекции (выравнивание, diff, аномалии, FP-фильтры)
 - **Другие языки:** Python, TypeScript, JavaScript, C++
-- **Инструменты:** Git, GitHub (ветвление, merge, code review в команде из 4 человек)
-- **Принципы:** ООП, SOLID, паттерны проектирования
 - **Английский:** B1
 
 ---
@@ -34,9 +34,9 @@ tg: @htodino
 
 Промышленный комплекс инспекции изделий на линии: камеры, вспышки, дискретное IO, PLC, оркестратор и детектор поверхности. Работал в команде из 4 человек: фичи в отдельных ветках, merge, разбор конфликтов, согласование контрактов между сервисами.
 
-**Роль:** .NET-сервисы оборудования, алгоритм анализа поверхности, работа с вендорским SDK и документацией.
+**Роль:** .NET-разработчик — backend-сервисы оборудования (ASP.NET Core, REST API), интеграция с нативными SDK; также реализовал алгоритм анализа поверхности (компьютерное зрение).
 
-**Стек:** C#, ASP.NET Core, .NET 10, WinForms, Python, OpenCV, FastAPI, Hikrobot MVS SDK, YAML, Swagger, UDP, Git.
+**Стек:** C#, .NET 10, ASP.NET Core, REST API, Swagger, P/Invoke, UDP, YAML, WinForms, Git; дополнительно Python, OpenCV, FastAPI.
 
 #### Микросервисная архитектура
 
@@ -68,9 +68,9 @@ HTTP-сервис управления вспышками Hikrobot MV-LE (COM и
 - UDP-публикация фронтов в оркестратор как внешний триггер инспекции
 - Разбор документации SDK: официальный COM-протокол, а не «сырой» GPIO
 
-#### Алгоритм анализа поверхности (analisSurface)
+#### Компьютерное зрение: алгоритм анализа поверхности (analisSurface)
 
-Пайплайн «кадр vs эталон» → вердикт ГОДЕН / БРАК для HTTP API, который вызывает оркестратор.
+Дополнительная часть проекта на Python. Пайплайн «кадр vs эталон» → вердикт ГОДЕН / БРАК для HTTP API, который вызывает оркестратор.
 
 - Выравнивание кадра (ORB + гомография / ECC, опционально матрица из сервиса геометрии)
 - Карта отличий, сегментация аномалий, ROI и FP-зоны, heatmap / diff / mask
@@ -84,7 +84,7 @@ HTTP-сервис управления вспышками Hikrobot MV-LE (COM и
 
 ---
 
-## 💻 Учебные и личные проекты
+## 💻 Личные .NET-проекты
 
 ### InnoShop
 
@@ -138,6 +138,7 @@ Clean Architecture, CQRS, JWT, email-уведомления, Swagger, Docker, п
 
 ## 📌 Дополнительная информация
 
+- 1 год опыта в .NET-разработке: ASP.NET Core, REST API, интеграции, микросервисы
 - Опыт командной разработки в Git: ветки, merge, согласование API между сервисами
 - Разбираюсь в технической документации вендоров и пишу внутренние гайды
 - Готов развиваться как .NET-разработчик в продуктовой или промышленной команде
